@@ -44,8 +44,8 @@ def get_issues(owner, repo):
 
 
 # Replace 'owner' and 'repo' with the appropriate values for your GitHub project
-owner = "nordicsmartgovernment"
-repo = "statistikkpilot_ssb"
+owner = "sskagemo"
+repo = "gh2remarkable"
 
 issues = get_issues(owner, repo)
 readme = get_file(owner, repo, "main", "README.md")

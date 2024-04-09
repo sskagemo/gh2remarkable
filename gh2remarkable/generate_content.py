@@ -19,7 +19,7 @@ def generate_html_content(owner, repo, branch, file_path, github_token):
         html_content += "<ul>"
         html_content += f"<li>State: {issue['state']}</li>"
         html_content += f"<li>Created: {issue['created_at']} and last updated {issue['updated_at']}</li>"
-        html_content += f"<li>Assignee: {'no assignee' if issue['assignee'] == None else issue['assignee'].get('login', 'no assignee')}</li>"
+        html_content += f"<li>Assignee: {'no assignee' if issue['assignee'] is None else issue['assignee'].get('login', 'no assignee')}</li>"
         html_content += f"<li>Author: {issue['user']['login']}</li>"
         html_content += f"<li>Comments: {issue['comments']}</li>"
         if issue['comments'] > 0:

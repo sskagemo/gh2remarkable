@@ -14,7 +14,9 @@ Basic usage to get the README and open issues on your reMarkable:
 $ gh2remarkable sskagemo gh2remarkable
 . . . . . Done!
 Created sskagemo_gh2remarkable.html with the content from README.md
-and alle open issues. Open the html-file in you browser and use the
+and alle open issues.
+
+Open the html-file in you browser and use the
 "print to reMarkable"-function to get the document on your reMarkable
 $
 ```
@@ -26,7 +28,9 @@ $ gh2remarkable
 Fetch content from user sskagemo and repository gh2remarkable? Y/n: y
 . . . . . Done!
 Created sskagemo_gh2remarkable.html with the content from README.md
-and alle open issues. Open the html-file in you browser and use the
+and alle open issues.
+
+Open the html-file in you browser and use the
 "print to reMarkable"-function to get the document on your reMarkable
 $
 ```
@@ -39,7 +43,9 @@ gh2remarkable Y/n: y
 statistikk_pilot Y/n: y
 . . . . . Done!
 Created sskagemo.html with the content from README.md
-and alle open issues. Open the html-file in you browser and use the
+and alle open issues from the selected repos.
+
+Open the html-file in you browser and use the
 "print to reMarkable"-function to get the document on your reMarkable
 $
 ```
@@ -66,7 +72,6 @@ Link to comment: https://github.com/sskagemo/gh2remarkable/issues/3#issue-348348
 Found a comment to issue 4. Add to issue? Y/n: n
 $
 ```
-
 
 
 ## Roadmap

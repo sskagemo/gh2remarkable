@@ -1,7 +1,7 @@
 import markdown
 
-from html_template import header, footer
-from get_content import get_file, get_issues
+from .html_template import header, footer
+from .get_content import get_file, get_issues
 
 # Function to generate HTML content from the issues and README
 def generate_html_content(owner, repo, branch, file_path, github_token):

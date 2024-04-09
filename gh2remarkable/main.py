@@ -1,7 +1,7 @@
 import os
 import typer
 
-from generate_content import generate_html_content
+from .generate_content import generate_html_content
 # from markdown.extensions import fenced_code
 #import pdfkit
 app = typer.Typer()

@@ -7,6 +7,14 @@ setup(
     author_email='sskagemo@gmail.com',
     description='A tool to sync github repositories to remarkable',
     packages=find_packages(),
+    install_requires=[
+        'typer',
+        'requests',
+        'PyGithub',
+        'PyMuPDF',
+    ],
+    entry_points = {'console_scripts':
+                    ['gh2rm=gh2remarkable.main:app' ]},
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',

@@ -31,6 +31,19 @@ and alle open issues. Open the html-file in you browser and use the
 $
 ```
 
+It is also possible to get all repos belonging to a given user. It requires that the personal access token has access to all the repos.
+```bash
+$ gh2remarkable sskagemo
+Fetch content from the following repos belonging to user sskagemo:
+gh2remarkable Y/n: y
+statistikk_pilot Y/n: y
+. . . . . Done!
+Created sskagemo.html with the content from README.md
+and alle open issues. Open the html-file in you browser and use the
+"print to reMarkable"-function to get the document on your reMarkable
+$
+```
+
 Read back a PDF-file that has been on the reMarkable, and look for a "new issues"-section, and add the issues found there to Github:
 ```bash
 $ gh2remarkable sskagemo_gh2remarkable.pdf
@@ -53,6 +66,7 @@ Link to comment: https://github.com/sskagemo/gh2remarkable/issues/3#issue-348348
 Found a comment to issue 4. Add to issue? Y/n: n
 $
 ```
+
 
 
 ## Roadmap

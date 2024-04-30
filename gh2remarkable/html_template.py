@@ -6,8 +6,8 @@ header = '''<!DOCTYPE html>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 10;
+            padding: 2;
         }
         h1 {
             color: #333;
@@ -21,7 +21,7 @@ header = '''<!DOCTYPE html>
             margin: 0;
         }
         @media print {
-            div#issues h2 {
+            div#issues div.issue {
                 page-break-before: always;
             }
         }

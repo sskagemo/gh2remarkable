@@ -11,9 +11,10 @@ def generate_html_content(owner, repo, branch, file_path, github_token):
     # Generate HTML content from the issues and README
     html_content = header.replace("[[[title]]]", f"{owner}/{repo}")
     html_content += f'<h1 style="text-align: center; background-color: white">Fra GitHub: {owner}/{repo}</h1>'
-    html_content += markdown.markdown(readme.decode('utf-8'))
+    html_content += markdown.markdown(readme.decode('utf-8'), extensions=['fenced_code'])
     html_content += '<div id="issues"><h1>Issues: Alle åpne issues</h1>'
-    for issue in issues:
+    for issue in issues[::-1]:  # Reverse the list to get the oldest issues first
+        html_content += "<div class=issue>**********"
         html_content += f"<h2><a href={issue['html_url']}>#{issue['number']}</a>: {issue['title']}</h2>"
         html_content += f"<p>{markdown.markdown(issue['body'], extensions=['fenced_code'])}</p>" if issue['body'] else ""
         html_content += "<ul>"
@@ -28,6 +29,8 @@ def generate_html_content(owner, repo, branch, file_path, github_token):
                 html_content += f"<li>{markdown.markdown(comment, extensions=['fenced_code'])}</li>"
             html_content += "</ul>"
         html_content += "</ul>"
+        html_content += "++++++++++</div>"
+    html_content += "**********"
     html_content += "</div>" + footer
 
     return html_content
